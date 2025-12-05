@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact — Club</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <div style="width:100%;max-width:900px;margin:40px auto;">
+    <div style="display:flex;justify-content:space-between;align-items:center;">
+      <a class="logo" href="home.html"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><rect rx="10" width="48" height="48" fill="url(#g)"/></svg><div><div class="brand-title">Club Portal</div><div class="brand-sub">Contact</div></div></a>
+      <div><button class="btn btn-ghost" data-logout>Logout</button></div>
+    </div>
+
+    <div class="card fade" style="margin-top:14px;">
+      <h3>Contact Us</h3>
+      <p class="muted">Send a message and we will reach out.</p>
+
+      <form id="contact-form" style="margin-top:12px;">
+        <div class="field"><label>Name</label><input class="input" name="name"></div>
+        <div class="field"><label>Email</label><input class="input" name="email"></div>
+        <div class="field"><label>Message</label><textarea class="input" name="message" rows="4"></textarea></div>
+        <button class="btn btn-primary" type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+<script>
+  // basic front-end only handler (no backend)
+  document.addEventListener('DOMContentLoaded',()=>{
+    const f = document.getElementById('contact-form');
+    if (f) f.addEventListener('submit',(e)=>{ e.preventDefault(); alert('Thanks — message received (demo).'); f.reset(); });
+  });
+</script>
+
+<script src="app.js"></script>
+</body></html>

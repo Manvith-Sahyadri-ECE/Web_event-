@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Gallery — Club</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <div style="width:100%;max-width:1000px;margin:40px auto;">
+    <div style="display:flex;justify-content:space-between;align-items:center;">
+      <a class="logo" href="home.html"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><rect rx="10" width="48" height="48" fill="url(#g)"/></svg><div><div class="brand-title">Club Portal</div><div class="brand-sub">Gallery</div></div></a>
+      <div style="display:flex;gap:12px;"><button class="btn btn-ghost" data-logout>Logout</button></div>
+    </div>
+
+    <div class="card fade" style="margin-top:14px;">
+      <h3>Gallery</h3>
+      <p class="muted">Upload and preview images</p>
+
+      <form id="upload-form" style="margin-top:12px;">
+        <input id="image-file" type="file" accept="image/*">
+        <button class="btn btn-primary" type="submit" style="margin-left:8px;">Upload</button>
+      </form>
+
+      <div class="gallery-grid" id="gallery-list" style="margin-top:12px;"></div>
+    </div>
+  </div>
+
+  <!-- modal -->
+  <div class="modal"><div class="modal-content"><button class="modal-close btn btn-ghost" style="float:right;margin:8px;">Close</button><img src="" style="width:100%;height:auto;display:block;"></div></div>
+
+<script src="app.js"></script>
+</body></html>

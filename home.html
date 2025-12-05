@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Home — Club</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div style="width:100%;max-width:1100px;margin:40px auto;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
+      <a class="logo" href="home.html">
+        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <rect rx="10" width="48" height="48" fill="url(#g)"/>
+          <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#7df9ff"/><stop offset="1" stop-color="#8a7cff"/></linearGradient></defs>
+          <path d="M14 30c6-8 20-12 26-12" stroke="#fff" stroke-width="2" fill="none"/>
+        </svg>
+        <div>
+          <div class="brand-title">Club Portal</div>
+          <div class="brand-sub">Welcome <span data-user-name></span></div>
+        </div>
+      </a>
+      <div style="display:flex;gap:12px;align-items:center;">
+        <button class="btn btn-ghost" onclick="location.href='profile.html'">Profile</button>
+        <button class="btn btn-ghost" data-logout>Logout</button>
+      </div>
+    </div>
+
+    <div class="card fade">
+      <div class="hero">
+        <div class="hero-left">
+          <h1>Welcome, <span data-user-name></span></h1>
+          <p class="muted">Check upcoming events and activities below.</p>
+        </div>
+        <div>
+          <a class="btn btn-primary" href="events.html">View Events</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card fade">
+      <h3>Upcoming Events</h3>
+      <div class="events-grid events-grid" style="margin-top:10px;"></div>
+    </div>
+
+    <div class="card fade">
+      <h3>Gallery</h3>
+      <div class="gallery-grid" id="gallery-list" style="margin-top:10px;"></div>
+      <div style="margin-top:12px;"><a class="btn btn-ghost" href="gallery.html">Open Gallery</a></div>
+    </div>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>

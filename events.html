@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Events — Club</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <div style="width:100%;max-width:1100px;margin:40px auto;">
+    <div style="display:flex;justify-content:space-between;align-items:center;">
+      <a class="logo" href="home.html"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><rect rx="10" width="48" height="48" fill="url(#g)"/><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#7df9ff"/><stop offset="1" stop-color="#8a7cff"/></linearGradient></defs></svg><div><div class="brand-title">Club Portal</div><div class="brand-sub">Events</div></div></a>
+      <div style="display:flex;gap:12px;"><button class="btn btn-ghost" onclick="location.href='admin.html'">Admin</button><button class="btn btn-ghost" data-logout>Logout</button></div>
+    </div>
+
+    <div class="card fade" style="margin-top:14px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <h3>Events</h3>
+        <a class="btn btn-primary" href="#add-event">Add Event</a>
+      </div>
+
+      <div class="events-grid" style="margin-top:12px;"></div>
+
+      <div id="add-event" style="margin-top:18px;">
+        <h4>Add Event (admin only)</h4>
+        <form id="add-event-form">
+          <div class="field"><label>Title</label><input name="title" class="input" placeholder="Event title"></div>
+          <div class="field"><label>Date & time</label><input name="date" class="input" placeholder="Jan 1, 2026"></div>
+          <div class="field"><label>Description</label><textarea name="desc" class="input" rows="3"></textarea></div>
+          <button class="btn btn-primary" type="submit">Add Event</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<script src="app.js"></script>
+</body></html>

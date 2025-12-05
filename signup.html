@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sign Up — Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container fade">
+    <div class="left">
+      <a class="logo" href="home.html">
+        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <rect rx="10" width="48" height="48" fill="url(#g)"/>
+          <defs>
+            <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#7df9ff"/><stop offset="1" stop-color="#8a7cff"/>
+            </linearGradient>
+          </defs>
+          <circle cx="24" cy="22" r="8" fill="#041028" opacity="0.12"/>
+          <path d="M14 30c6-8 20-12 26-12" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none"/>
+        </svg>
+        <div>
+          <div class="brand-title">Club Portal</div>
+          <div class="brand-sub">Join the movement</div>
+        </div>
+      </a>
+
+      <div class="header-h">
+        <div>
+          <div style="font-weight:800;color:#fff;">Create your account</div>
+          <div class="muted">it takes just a minute</div>
+        </div>
+        <button class="btn btn-ghost" onclick="location.href='login.html'">Sign in</button>
+      </div>
+
+      <form id="signup-form" class="form">
+        <h2>Get started</h2>
+        <p class="muted">Enter your details to create a free account.</p>
+
+        <div class="field">
+          <label>Full name</label>
+          <input id="signup-name" class="input" type="text" placeholder="John Doe" required>
+        </div>
+
+        <div class="field">
+          <label>Email address</label>
+          <input id="signup-email" class="input" type="email" placeholder="you@domain.com" required>
+        </div>
+
+        <div class="field">
+          <label>Password</label>
+          <input id="signup-password" class="input" type="password" placeholder="Min. 8 characters" required>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Create account</button>
+
+        <div class="switch-link">Already a member? <a href="login.html">Sign in</a></div>
+      </form>
+    </div>
+
+    <div class="right">
+      <div class="card fade">
+        <div class="hero">
+          <div class="hero-left">
+            <h1>Welcome to the Club</h1>
+            <p class="muted">Collaborate, learn and grow with fellow members.</p>
+          </div>
+          <div class="quick-actions">
+            <button class="btn btn-ghost" onclick="location.href='about.html'">About</button>
+            <button class="btn btn-ghost" onclick="location.href='events.html'">Events</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade">
+        <h3>Why join?</h3>
+        <ul class="muted" style="margin-top:8px;line-height:1.7;">
+          <li>Hands-on projects & workshops</li>
+          <li>Meetups & networking</li>
+          <li>Showcase & collaborate</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
